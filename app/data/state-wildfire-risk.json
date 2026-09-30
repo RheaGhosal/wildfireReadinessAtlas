@@ -1,0 +1,472 @@
+{
+  "metadata": {
+    "status": "verified",
+    "title": "Wildfire Readiness Atlas",
+    "source": "FEMA National Risk Index v1.20 (December 2025), county table",
+    "risk_data_as_of": "December 2025",
+    "updated_at": "2026-09-16",
+    "aggregation_method": "County FEMA wildfire relative-risk scores, weighted by FEMA county population.",
+    "disclaimer": "Educational use only; do not use for emergency decisions."
+  },
+  "states": [
+    {
+      "name": "Alabama",
+      "abbr": "AL",
+      "risk_band": "Moderate",
+      "wildfire_risk_score": 62.583,
+      "wildfire_eal_total": "$8,228,989",
+      "counties_included": 67,
+      "notes": "Population-weighted aggregation of county-level FEMA NRI wildfire relative-risk scores; not a real-time forecast."
+    },
+    {
+      "name": "Alaska",
+      "abbr": "AK",
+      "risk_band": "High",
+      "wildfire_risk_score": 74.126,
+      "wildfire_eal_total": "$31,926,226",
+      "counties_included": 30,
+      "notes": "Population-weighted aggregation of county-level FEMA NRI wildfire relative-risk scores; not a real-time forecast."
+    },
+    {
+      "name": "Arizona",
+      "abbr": "AZ",
+      "risk_band": "High",
+      "wildfire_risk_score": 98.178,
+      "wildfire_eal_total": "$228,349,137",
+      "counties_included": 15,
+      "notes": "Population-weighted aggregation of county-level FEMA NRI wildfire relative-risk scores; not a real-time forecast."
+    },
+    {
+      "name": "Arkansas",
+      "abbr": "AR",
+      "risk_band": "Moderate",
+      "wildfire_risk_score": 64.226,
+      "wildfire_eal_total": "$13,470,183",
+      "counties_included": 75,
+      "notes": "Population-weighted aggregation of county-level FEMA NRI wildfire relative-risk scores; not a real-time forecast."
+    },
+    {
+      "name": "California",
+      "abbr": "CA",
+      "risk_band": "High",
+      "wildfire_risk_score": 96.784,
+      "wildfire_eal_total": "$1,787,365,372",
+      "counties_included": 58,
+      "notes": "Population-weighted aggregation of county-level FEMA NRI wildfire relative-risk scores; not a real-time forecast."
+    },
+    {
+      "name": "Colorado",
+      "abbr": "CO",
+      "risk_band": "High",
+      "wildfire_risk_score": 86.807,
+      "wildfire_eal_total": "$211,174,415",
+      "counties_included": 64,
+      "notes": "Population-weighted aggregation of county-level FEMA NRI wildfire relative-risk scores; not a real-time forecast."
+    },
+    {
+      "name": "Connecticut",
+      "abbr": "CT",
+      "risk_band": "Low",
+      "wildfire_risk_score": 45.034,
+      "wildfire_eal_total": "$312,851",
+      "counties_included": 9,
+      "notes": "Population-weighted aggregation of county-level FEMA NRI wildfire relative-risk scores; not a real-time forecast."
+    },
+    {
+      "name": "Delaware",
+      "abbr": "DE",
+      "risk_band": "Moderate",
+      "wildfire_risk_score": 67.168,
+      "wildfire_eal_total": "$759,208",
+      "counties_included": 3,
+      "notes": "Population-weighted aggregation of county-level FEMA NRI wildfire relative-risk scores; not a real-time forecast."
+    },
+    {
+      "name": "District Of Columbia",
+      "abbr": "DC",
+      "risk_band": "Low",
+      "wildfire_risk_score": 26.209,
+      "wildfire_eal_total": "$11,538",
+      "counties_included": 1,
+      "notes": "Population-weighted aggregation of county-level FEMA NRI wildfire relative-risk scores; not a real-time forecast."
+    },
+    {
+      "name": "Florida",
+      "abbr": "FL",
+      "risk_band": "High",
+      "wildfire_risk_score": 92.776,
+      "wildfire_eal_total": "$111,787,038",
+      "counties_included": 67,
+      "notes": "Population-weighted aggregation of county-level FEMA NRI wildfire relative-risk scores; not a real-time forecast."
+    },
+    {
+      "name": "Georgia",
+      "abbr": "GA",
+      "risk_band": "Moderate",
+      "wildfire_risk_score": 53.444,
+      "wildfire_eal_total": "$14,675,072",
+      "counties_included": 159,
+      "notes": "Population-weighted aggregation of county-level FEMA NRI wildfire relative-risk scores; not a real-time forecast."
+    },
+    {
+      "name": "Hawaii",
+      "abbr": "HI",
+      "risk_band": "High",
+      "wildfire_risk_score": 98.161,
+      "wildfire_eal_total": "$47,306,893",
+      "counties_included": 5,
+      "notes": "Population-weighted aggregation of county-level FEMA NRI wildfire relative-risk scores; not a real-time forecast."
+    },
+    {
+      "name": "Idaho",
+      "abbr": "ID",
+      "risk_band": "High",
+      "wildfire_risk_score": 90.409,
+      "wildfire_eal_total": "$142,875,391",
+      "counties_included": 44,
+      "notes": "Population-weighted aggregation of county-level FEMA NRI wildfire relative-risk scores; not a real-time forecast."
+    },
+    {
+      "name": "Illinois",
+      "abbr": "IL",
+      "risk_band": "Low",
+      "wildfire_risk_score": 37.382,
+      "wildfire_eal_total": "$510,059",
+      "counties_included": 102,
+      "notes": "Population-weighted aggregation of county-level FEMA NRI wildfire relative-risk scores; not a real-time forecast."
+    },
+    {
+      "name": "Indiana",
+      "abbr": "IN",
+      "risk_band": "Low",
+      "wildfire_risk_score": 24.632,
+      "wildfire_eal_total": "$710,171",
+      "counties_included": 92,
+      "notes": "Population-weighted aggregation of county-level FEMA NRI wildfire relative-risk scores; not a real-time forecast."
+    },
+    {
+      "name": "Iowa",
+      "abbr": "IA",
+      "risk_band": "Moderate",
+      "wildfire_risk_score": 45.192,
+      "wildfire_eal_total": "$4,546,449",
+      "counties_included": 99,
+      "notes": "Population-weighted aggregation of county-level FEMA NRI wildfire relative-risk scores; not a real-time forecast."
+    },
+    {
+      "name": "Kansas",
+      "abbr": "KS",
+      "risk_band": "Moderate",
+      "wildfire_risk_score": 70.002,
+      "wildfire_eal_total": "$49,648,013",
+      "counties_included": 105,
+      "notes": "Population-weighted aggregation of county-level FEMA NRI wildfire relative-risk scores; not a real-time forecast."
+    },
+    {
+      "name": "Kentucky",
+      "abbr": "KY",
+      "risk_band": "Low",
+      "wildfire_risk_score": 34.545,
+      "wildfire_eal_total": "$7,726,560",
+      "counties_included": 120,
+      "notes": "Population-weighted aggregation of county-level FEMA NRI wildfire relative-risk scores; not a real-time forecast."
+    },
+    {
+      "name": "Louisiana",
+      "abbr": "LA",
+      "risk_band": "Moderate",
+      "wildfire_risk_score": 47.876,
+      "wildfire_eal_total": "$6,795,434",
+      "counties_included": 64,
+      "notes": "Population-weighted aggregation of county-level FEMA NRI wildfire relative-risk scores; not a real-time forecast."
+    },
+    {
+      "name": "Maine",
+      "abbr": "ME",
+      "risk_band": "Low",
+      "wildfire_risk_score": 32.293,
+      "wildfire_eal_total": "$248,387",
+      "counties_included": 16,
+      "notes": "Population-weighted aggregation of county-level FEMA NRI wildfire relative-risk scores; not a real-time forecast."
+    },
+    {
+      "name": "Maryland",
+      "abbr": "MD",
+      "risk_band": "Low",
+      "wildfire_risk_score": 33.554,
+      "wildfire_eal_total": "$2,544,992",
+      "counties_included": 24,
+      "notes": "Population-weighted aggregation of county-level FEMA NRI wildfire relative-risk scores; not a real-time forecast."
+    },
+    {
+      "name": "Massachusetts",
+      "abbr": "MA",
+      "risk_band": "Moderate",
+      "wildfire_risk_score": 50.868,
+      "wildfire_eal_total": "$794,550",
+      "counties_included": 14,
+      "notes": "Population-weighted aggregation of county-level FEMA NRI wildfire relative-risk scores; not a real-time forecast."
+    },
+    {
+      "name": "Michigan",
+      "abbr": "MI",
+      "risk_band": "Low",
+      "wildfire_risk_score": 39.834,
+      "wildfire_eal_total": "$2,318,098",
+      "counties_included": 83,
+      "notes": "Population-weighted aggregation of county-level FEMA NRI wildfire relative-risk scores; not a real-time forecast."
+    },
+    {
+      "name": "Minnesota",
+      "abbr": "MN",
+      "risk_band": "Moderate",
+      "wildfire_risk_score": 57.454,
+      "wildfire_eal_total": "$12,408,125",
+      "counties_included": 87,
+      "notes": "Population-weighted aggregation of county-level FEMA NRI wildfire relative-risk scores; not a real-time forecast."
+    },
+    {
+      "name": "Mississippi",
+      "abbr": "MS",
+      "risk_band": "Moderate",
+      "wildfire_risk_score": 57.752,
+      "wildfire_eal_total": "$11,841,979",
+      "counties_included": 82,
+      "notes": "Population-weighted aggregation of county-level FEMA NRI wildfire relative-risk scores; not a real-time forecast."
+    },
+    {
+      "name": "Missouri",
+      "abbr": "MO",
+      "risk_band": "Moderate",
+      "wildfire_risk_score": 53.762,
+      "wildfire_eal_total": "$8,238,226",
+      "counties_included": 115,
+      "notes": "Population-weighted aggregation of county-level FEMA NRI wildfire relative-risk scores; not a real-time forecast."
+    },
+    {
+      "name": "Montana",
+      "abbr": "MT",
+      "risk_band": "High",
+      "wildfire_risk_score": 88.392,
+      "wildfire_eal_total": "$72,702,274",
+      "counties_included": 56,
+      "notes": "Population-weighted aggregation of county-level FEMA NRI wildfire relative-risk scores; not a real-time forecast."
+    },
+    {
+      "name": "Nebraska",
+      "abbr": "NE",
+      "risk_band": "High",
+      "wildfire_risk_score": 77.471,
+      "wildfire_eal_total": "$21,171,994",
+      "counties_included": 93,
+      "notes": "Population-weighted aggregation of county-level FEMA NRI wildfire relative-risk scores; not a real-time forecast."
+    },
+    {
+      "name": "Nevada",
+      "abbr": "NV",
+      "risk_band": "High",
+      "wildfire_risk_score": 98.171,
+      "wildfire_eal_total": "$156,551,580",
+      "counties_included": 17,
+      "notes": "Population-weighted aggregation of county-level FEMA NRI wildfire relative-risk scores; not a real-time forecast."
+    },
+    {
+      "name": "New Hampshire",
+      "abbr": "NH",
+      "risk_band": "Moderate",
+      "wildfire_risk_score": 45.295,
+      "wildfire_eal_total": "$387,204",
+      "counties_included": 10,
+      "notes": "Population-weighted aggregation of county-level FEMA NRI wildfire relative-risk scores; not a real-time forecast."
+    },
+    {
+      "name": "New Jersey",
+      "abbr": "NJ",
+      "risk_band": "Moderate",
+      "wildfire_risk_score": 50.425,
+      "wildfire_eal_total": "$13,856,730",
+      "counties_included": 21,
+      "notes": "Population-weighted aggregation of county-level FEMA NRI wildfire relative-risk scores; not a real-time forecast."
+    },
+    {
+      "name": "New Mexico",
+      "abbr": "NM",
+      "risk_band": "High",
+      "wildfire_risk_score": 92.101,
+      "wildfire_eal_total": "$113,131,349",
+      "counties_included": 33,
+      "notes": "Population-weighted aggregation of county-level FEMA NRI wildfire relative-risk scores; not a real-time forecast."
+    },
+    {
+      "name": "New York",
+      "abbr": "NY",
+      "risk_band": "Low",
+      "wildfire_risk_score": 34.542,
+      "wildfire_eal_total": "$1,330,846",
+      "counties_included": 62,
+      "notes": "Population-weighted aggregation of county-level FEMA NRI wildfire relative-risk scores; not a real-time forecast."
+    },
+    {
+      "name": "North Carolina",
+      "abbr": "NC",
+      "risk_band": "Moderate",
+      "wildfire_risk_score": 53.761,
+      "wildfire_eal_total": "$13,980,859",
+      "counties_included": 100,
+      "notes": "Population-weighted aggregation of county-level FEMA NRI wildfire relative-risk scores; not a real-time forecast."
+    },
+    {
+      "name": "North Dakota",
+      "abbr": "ND",
+      "risk_band": "Moderate",
+      "wildfire_risk_score": 65.303,
+      "wildfire_eal_total": "$15,510,440",
+      "counties_included": 53,
+      "notes": "Population-weighted aggregation of county-level FEMA NRI wildfire relative-risk scores; not a real-time forecast."
+    },
+    {
+      "name": "Ohio",
+      "abbr": "OH",
+      "risk_band": "Low",
+      "wildfire_risk_score": 36.704,
+      "wildfire_eal_total": "$1,489,099",
+      "counties_included": 88,
+      "notes": "Population-weighted aggregation of county-level FEMA NRI wildfire relative-risk scores; not a real-time forecast."
+    },
+    {
+      "name": "Oklahoma",
+      "abbr": "OK",
+      "risk_band": "High",
+      "wildfire_risk_score": 86.886,
+      "wildfire_eal_total": "$60,269,991",
+      "counties_included": 77,
+      "notes": "Population-weighted aggregation of county-level FEMA NRI wildfire relative-risk scores; not a real-time forecast."
+    },
+    {
+      "name": "Oregon",
+      "abbr": "OR",
+      "risk_band": "Moderate",
+      "wildfire_risk_score": 70.644,
+      "wildfire_eal_total": "$126,341,823",
+      "counties_included": 36,
+      "notes": "Population-weighted aggregation of county-level FEMA NRI wildfire relative-risk scores; not a real-time forecast."
+    },
+    {
+      "name": "Pennsylvania",
+      "abbr": "PA",
+      "risk_band": "Low",
+      "wildfire_risk_score": 38.677,
+      "wildfire_eal_total": "$1,466,915",
+      "counties_included": 67,
+      "notes": "Population-weighted aggregation of county-level FEMA NRI wildfire relative-risk scores; not a real-time forecast."
+    },
+    {
+      "name": "Rhode Island",
+      "abbr": "RI",
+      "risk_band": "Low",
+      "wildfire_risk_score": 26.34,
+      "wildfire_eal_total": "$43,502",
+      "counties_included": 5,
+      "notes": "Population-weighted aggregation of county-level FEMA NRI wildfire relative-risk scores; not a real-time forecast."
+    },
+    {
+      "name": "South Carolina",
+      "abbr": "SC",
+      "risk_band": "Moderate",
+      "wildfire_risk_score": 71.038,
+      "wildfire_eal_total": "$14,930,203",
+      "counties_included": 46,
+      "notes": "Population-weighted aggregation of county-level FEMA NRI wildfire relative-risk scores; not a real-time forecast."
+    },
+    {
+      "name": "South Dakota",
+      "abbr": "SD",
+      "risk_band": "High",
+      "wildfire_risk_score": 75.43,
+      "wildfire_eal_total": "$41,860,115",
+      "counties_included": 66,
+      "notes": "Population-weighted aggregation of county-level FEMA NRI wildfire relative-risk scores; not a real-time forecast."
+    },
+    {
+      "name": "Tennessee",
+      "abbr": "TN",
+      "risk_band": "Moderate",
+      "wildfire_risk_score": 48.286,
+      "wildfire_eal_total": "$3,836,410",
+      "counties_included": 95,
+      "notes": "Population-weighted aggregation of county-level FEMA NRI wildfire relative-risk scores; not a real-time forecast."
+    },
+    {
+      "name": "Texas",
+      "abbr": "TX",
+      "risk_band": "High",
+      "wildfire_risk_score": 83.511,
+      "wildfire_eal_total": "$126,057,441",
+      "counties_included": 254,
+      "notes": "Population-weighted aggregation of county-level FEMA NRI wildfire relative-risk scores; not a real-time forecast."
+    },
+    {
+      "name": "Utah",
+      "abbr": "UT",
+      "risk_band": "High",
+      "wildfire_risk_score": 95.269,
+      "wildfire_eal_total": "$197,181,712",
+      "counties_included": 29,
+      "notes": "Population-weighted aggregation of county-level FEMA NRI wildfire relative-risk scores; not a real-time forecast."
+    },
+    {
+      "name": "Vermont",
+      "abbr": "VT",
+      "risk_band": "Low",
+      "wildfire_risk_score": 20.963,
+      "wildfire_eal_total": "$118,927",
+      "counties_included": 14,
+      "notes": "Population-weighted aggregation of county-level FEMA NRI wildfire relative-risk scores; not a real-time forecast."
+    },
+    {
+      "name": "Virginia",
+      "abbr": "VA",
+      "risk_band": "Low",
+      "wildfire_risk_score": 33.108,
+      "wildfire_eal_total": "$4,349,694",
+      "counties_included": 133,
+      "notes": "Population-weighted aggregation of county-level FEMA NRI wildfire relative-risk scores; not a real-time forecast."
+    },
+    {
+      "name": "Washington",
+      "abbr": "WA",
+      "risk_band": "High",
+      "wildfire_risk_score": 74.173,
+      "wildfire_eal_total": "$173,105,718",
+      "counties_included": 39,
+      "notes": "Population-weighted aggregation of county-level FEMA NRI wildfire relative-risk scores; not a real-time forecast."
+    },
+    {
+      "name": "West Virginia",
+      "abbr": "WV",
+      "risk_band": "Low",
+      "wildfire_risk_score": 41.404,
+      "wildfire_eal_total": "$2,564,428",
+      "counties_included": 55,
+      "notes": "Population-weighted aggregation of county-level FEMA NRI wildfire relative-risk scores; not a real-time forecast."
+    },
+    {
+      "name": "Wisconsin",
+      "abbr": "WI",
+      "risk_band": "Low",
+      "wildfire_risk_score": 34.805,
+      "wildfire_eal_total": "$1,507,911",
+      "counties_included": 72,
+      "notes": "Population-weighted aggregation of county-level FEMA NRI wildfire relative-risk scores; not a real-time forecast."
+    },
+    {
+      "name": "Wyoming",
+      "abbr": "WY",
+      "risk_band": "High",
+      "wildfire_risk_score": 86.58,
+      "wildfire_eal_total": "$24,164,816",
+      "counties_included": 23,
+      "notes": "Population-weighted aggregation of county-level FEMA NRI wildfire relative-risk scores; not a real-time forecast."
+    }
+  ]
+}

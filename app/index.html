@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="An educational wildfire-risk and preparedness dashboard for U.S. states." />
+    <link rel="canonical" href="https://environmental-literacy.seasidesustainability.org/" />
+    <title>Wildfire Readiness Atlas</title>
+    <link rel="stylesheet" href="styles.css?v=20260918-builder-note" />
+  </head>
+  <body>
+    <a class="skip-link" href="#dashboard">Skip to dashboard</a>
+    <div class="site-masthead" aria-label="Seaside Sustainability project header">
+      <a href="https://www.seasidesustainability.org/" target="_blank" rel="noreferrer" aria-label="Visit Seaside Sustainability">
+        <img src="assets/seaside-sustainability-logo.png" alt="Seaside Sustainability" />
+      </a>
+      <p>Green Scholars · Environmental Literacy</p>
+    </div>
+    <header class="hero">
+      <div class="hero-layout">
+        <div>
+          <p class="eyebrow">Green Scholars · Environmental literacy</p>
+          <h1>Wildfire Readiness Atlas</h1>
+          <p class="hero-copy">A state-level learning map for asking better questions about wildfire risk, smoke, preparedness, and equity.</p>
+        </div>
+      </div>
+      <p class="photo-credit">Rim Fire, Stanislaus National Forest, 2013 · <a href="https://creativecommons.org/licenses/by/2.0/" target="_blank" rel="noreferrer">USDA Forest Service · CC BY 2.0</a></p>
+      <p class="safety-note">Not live emergency guidance. For active fires, alerts, and evacuation instructions, use local emergency management and official alerts.</p>
+    </header>
+
+    <main id="dashboard">
+      <section id="state-loading" class="state-loading" hidden aria-live="polite" aria-label="Loading selected state">
+        <div class="loading-copy"><span id="loading-label">Preparing state view</span><strong id="loading-percent">0%</strong></div>
+        <div class="loading-track" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" aria-labelledby="loading-label"><span id="loading-bar"></span></div>
+      </section>
+      <section id="county-panel" class="panel county-panel" hidden role="dialog" aria-modal="true" aria-labelledby="county-title" tabindex="-1">
+        <div class="panel-heading">
+          <div><p class="eyebrow" id="county-eyebrow">California county view</p><h2 id="county-title">Wildfire risk concentration by county</h2></div>
+          <div class="county-controls"><p class="panel-meta">Animated county-level FEMA NRI context</p><button class="county-close" id="close-county" type="button" aria-label="Close California county map">Close</button></div>
+        </div>
+        <p class="panel-intro" id="county-intro">County boundaries come from the U.S. Census Bureau. Each county is colored from its FEMA National Risk Index wildfire relative-risk score: red is higher, gold is moderate, green is lower. This is not a current fire perimeter or evacuation map.</p>
+        <div class="county-layout">
+          <div class="county-map-wrap"><svg id="county-map" viewBox="0 0 600 720" role="img" aria-label="California counties colored by FEMA wildfire relative risk"></svg></div>
+          <aside class="county-tooltip" id="county-tooltip"><p class="eyebrow">County detail</p><h3>Hover or tap a county</h3><p>Its FEMA wildfire-risk context will appear here.</p></aside>
+        </div>
+      </section>
+
+      <section class="content-grid">
+        <article class="panel map-panel">
+          <div class="panel-heading"><div><p class="eyebrow">State map</p><h2>Wildfire risk context</h2></div><p class="legend"><i class="swatch high"></i> Higher <i class="swatch medium"></i> Moderate <i class="swatch low"></i> Lower</p></div>
+          <p id="firms-live-badge" class="firms-live-badge" aria-live="polite"><span></span> LIVE NASA FIRMS · Loading satellite feed…</p>
+          <p class="panel-intro">This tile map is arranged approximately like the United States. Color intensity shows each state's population-weighted FEMA NRI wildfire relative-risk score; select a state for its details.</p>
+          <p class="map-cta">Choose a state to see its county-level wildfire context and current conditions.</p>
+          <div id="state-map" class="state-map" role="list" aria-label="U.S. states by wildfire-risk band"></div>
+        </article>
+
+        <aside class="panel state-detail" aria-live="polite">
+          <p class="eyebrow">Explore a state</p>
+          <h2 id="detail-name">Choose a state</h2>
+          <p id="detail-description">The dashboard will show information only after official FEMA NRI data is imported and reviewed.</p>
+          <dl id="detail-metrics" class="metrics"></dl>
+          <section class="live-conditions" aria-live="polite">
+            <p class="eyebrow">Live conditions</p>
+            <h3>Current National Weather Service alerts</h3>
+            <p id="live-alert-status">Choose a state to check currently active NWS alerts.</p>
+            <p id="live-alert-time" class="live-time"></p>
+          </section>
+          <section class="live-conditions firms-conditions" aria-live="polite">
+            <p class="eyebrow">Live satellite observations</p>
+            <h3>NASA FIRMS heat detections</h3>
+            <p id="firms-status">Choose a state to load the most recent satellite detections.</p>
+            <p id="firms-time" class="live-time"></p>
+          </section>
+          <a id="official-alerts" class="resource-link" href="https://www.ready.gov/wildfires" target="_blank" rel="noreferrer">Open wildfire preparedness guidance</a>
+        </aside>
+      </section>
+
+      <section class="builder-note" aria-labelledby="why-built-title">
+        <figure class="project-byline">
+          <img src="assets/rhea-ghosal.avif" alt="Rhea Ghosal" />
+          <figcaption><strong>Rhea Ghosal</strong><span>Seaside Sustainability<br />Environmental Literacy Manager</span></figcaption>
+        </figure>
+        <div>
+          <p class="eyebrow">Why I built this</p>
+          <h2 id="why-built-title">Wildfire information should be a starting point everyone can use.</h2>
+          <p class="builder-copy">While researching wildfire risk in Napa Valley, I kept finding that the best data lived in tools built for experts. I designed and built Wildfire Readiness Atlas to change that: a place where students, families, and communities can explore official risk data, ask better questions about what it leaves out, and start preparing.</p>
+          <p class="builder-copy">I developed the Atlas with Python, GeoPandas, Shapely, and GeoJSON to process FEMA county-level risk and Census boundary data, then built an interactive JavaScript dashboard that connects the results with live NASA FIRMS satellite detections and National Weather Service alerts.</p>
+        </div>
+      </section>
+
+      <section class="status-panel" aria-labelledby="data-status-heading">
+        <div>
+          <p class="eyebrow">Data status</p>
+          <h2 id="data-status-heading">Loading source information…</h2>
+          <p id="source-status">Checking the verified dashboard dataset.</p>
+          <p id="risk-date" class="risk-date"></p>
+        </div>
+        <p id="updated-at" class="updated-at"></p>
+      </section>
+
+      <section class="summary-grid" aria-label="State wildfire-risk summary">
+        <article><p>States in view</p><strong id="state-count">50 + DC</strong><span>State-level learning context</span></article>
+        <article><p>Highest risk context</p><strong id="highest-band">—</strong><span id="top-state">Appears after source import</span></article>
+        <article><p>Readiness questions</p><strong>4</strong><span>Risk, smoke, evacuation, support</span></article>
+      </section>
+
+      <section class="panel concentration-panel" aria-labelledby="concentration-title">
+        <div class="panel-heading">
+          <div><p class="eyebrow">Risk concentration</p><h2 id="concentration-title">Where the FEMA wildfire signal is strongest</h2></div>
+          <p class="panel-meta">Top 12 state aggregates</p>
+        </div>
+        <p class="panel-intro">Bars compare the population-weighted average of FEMA county wildfire relative-risk scores in each state. County population is used so places where more people live contribute proportionally; this is learning context, not a prediction of where the next wildfire will occur.</p>
+        <p class="panel-meta">Score 0–100; higher means higher wildfire risk relative to other counties.</p>
+        <div id="concentration-list" class="concentration-list" aria-label="Highest state wildfire relative-risk scores"></div>
+      </section>
+
+      <section class="learn-panel">
+        <div><p class="eyebrow">Student field guide</p><h2>Maps are a starting point, not the answer.</h2></div>
+        <ol>
+          <li><strong>Read critically.</strong> What measure is shown? When was it last updated?</li>
+          <li><strong>Look for gaps.</strong> Whose needs—language, disability access, transportation, housing, or air filtration—might not appear on a map?</li>
+          <li><strong>Find local support.</strong> Identify the school, library, clinic, emergency-management office, and trusted people your family can contact.</li>
+          <li><strong>Prepare before smoke or evacuation.</strong> Make a family communication plan and follow local officials during an emergency.</li>
+        </ol>
+      </section>
+
+      <section class="panel methodology">
+        <p class="eyebrow">Method and limits</p>
+        <h2>What this dashboard does—and does not—claim</h2>
+        <p>It aggregates county-level FEMA National Risk Index wildfire relative-risk scores into a state-level educational view, weighting each county by FEMA's reported population. This keeps the statewide comparison focused on the people represented by the source data while leaving the county-level map available for local context. It does not predict the next fire, replace local warnings, rank communities by worthiness, or determine where people should live.</p>
+        <a href="methodology.html">Read the methodology and sources</a>
+      </section>
+    </main>
+    <footer>Wildfire Readiness Atlas · Built for environmental literacy and community preparedness.</footer>
+    <script src="app.js?v=20260915-open-at-top"></script>
+  </body>
+</html>

@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Public methodology and sources for Wildfire Readiness Atlas." />
+    <title>Methodology and sources · Wildfire Readiness Atlas</title>
+    <link rel="canonical" href="https://environmental-literacy.seasidesustainability.org/methodology.html" />
+    <link rel="stylesheet" href="styles.css?v=20260917-green-scholars" />
+  </head>
+  <body>
+    <div class="site-masthead" aria-label="Seaside Sustainability project header">
+      <a href="https://www.seasidesustainability.org/" target="_blank" rel="noreferrer" aria-label="Visit Seaside Sustainability">
+        <img src="assets/seaside-sustainability-logo.png" alt="Seaside Sustainability" />
+      </a>
+      <p>Green Scholars · Environmental Literacy</p>
+    </div>
+    <header class="method-hero">
+      <p class="eyebrow">Wildfire Readiness Atlas</p>
+      <h1>Methodology and sources</h1>
+      <p>This page explains what the Atlas shows, how its state comparisons are calculated, and what it does not claim.</p>
+      <p><a href="./">← Return to the Atlas</a></p>
+    </header>
+
+    <main class="method-main">
+      <section>
+        <h2>Purpose</h2>
+        <p>Wildfire Readiness Atlas is an educational dashboard. It helps students, families, and communities explore long-term wildfire-risk context and connect it with preparedness questions. It is not a fire prediction system, an evacuation map, or emergency guidance.</p>
+      </section>
+
+      <section>
+        <h2>How state scores are calculated</h2>
+        <p>Each state score is a <strong>population-weighted average</strong> of FEMA National Risk Index county wildfire relative-risk scores. For every county, its wildfire relative-risk score is multiplied by FEMA's reported county population. Those products are added within the state and divided by the state's total reported county population.</p>
+        <p>This gives counties proportional influence based on the number of people represented in the FEMA source data. The score is a comparative, long-term context measure—not a forecast of where the next wildfire will occur. County-level maps remain available so visitors can explore local variation rather than relying only on a state aggregate.</p>
+      </section>
+
+      <section>
+        <h2>Coverage</h2>
+        <p>This release includes the 50 U.S. states and the District of Columbia. U.S. territories are excluded from the state comparison in this release; they are not treated as low risk or as zero values. They will be considered only after the same source, boundary, and review standard is applied.</p>
+      </section>
+
+      <section>
+        <h2>Sources used in the live site</h2>
+        <dl>
+          <div><dt>Long-term wildfire-risk context</dt><dd>FEMA National Risk Index, version 1.20, county table, December 2025 release. Downloaded August 26, 2026. Fields used: county, state, population, wildfire relative-risk score, and wildfire expected annual loss.</dd></div>
+          <div><dt>County boundaries</dt><dd>U.S. Census Bureau 2024 cartographic boundary files, simplified for browser display.</dd></div>
+          <div><dt>Live satellite observations</dt><dd>NASA FIRMS heat detections. Detections are refreshed in the dashboard and are not confirmed fire perimeters or evacuation orders.</dd></div>
+          <div><dt>Live alerts</dt><dd>National Weather Service active-alert feed. Visitors should always follow local officials and emergency management during an active event.</dd></div>
+        </dl>
+      </section>
+
+      <section>
+        <h2>Limitations</h2>
+        <p>Risk measures do not capture every lived condition that can shape preparedness, including language access, disability access, housing, transportation, local communication networks, and access to clean indoor air. The Atlas is designed to help visitors ask those additional questions.</p>
+      </section>
+    </main>
+
+    <footer>Wildfire Readiness Atlas · Built for environmental literacy and community preparedness.</footer>
+  </body>
+</html>

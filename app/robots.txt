@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://environmental-literacy.seasidesustainability.org/sitemap.xml

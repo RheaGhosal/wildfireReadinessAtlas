@@ -1,0 +1,8 @@
+[Unit]
+Description=Refresh FireSafe Atlas NASA FIRMS live-detection cache
+Wants=network-online.target
+After=network-online.target
+
+[Service]
+Type=oneshot
+ExecStart=/usr/local/bin/firesafe-firms-update
